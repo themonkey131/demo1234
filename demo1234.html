@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<script type="text/javascript" src="demo.js"></script>
 	<meta charset="utf-8">
 	<style type="text/css">
 		#tong{
@@ -35,13 +36,13 @@
 			</div>
 			<div id="duoi" align="center" style="padding-top: 30px">
 				<table id="bang_con">
-					<form>
+
 							<tr>
 								<td>
 									<b>Nhập số thứ nhất:</b>
 								</td>
 								<td>
-									<input type="numble" required>
+									<input type="number" id="so1" required>
 								</td>
 							</tr>
 								<tr>
@@ -49,11 +50,11 @@
 									<b>Chọn toán tử:</b>
 								</td>
 								<td>
-									<select>
-										<option>+</option>
-										<option>-</option>
-										<option>x</option>
-										<option>:</option>
+									<select id="list">
+										<option value="cong">+</option>
+										<option value="tru">-</option>
+										<option value="nhan">x</option>
+										<option value="chia">:</option>
 									</select>
 								</td>
 							</tr>
@@ -62,18 +63,18 @@
 									<b>Nhập số thứ hai:</b>
 								</td>
 								<td>
-									<input type="numble" required>
+									<input type="number" id="so2" required>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<button ><b><i>Kiểm tra kết quả</i></b></button>
+									<button onclick="Hienthi();"><b><i>Kiểm tra kết quả</i></b></button>
 								</td>
 								<td>
-									<input type="numble" required>
+									<input type="number" id="kq">
 								</td>
 							</tr>
-					</form>
+					
 				</table>
 			</div>
 		</div>
